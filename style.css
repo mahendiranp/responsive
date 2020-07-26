@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: 100%;
+    max-width: 1024px;
+    margin: 0px auto;
+}
+.left-panel{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    flex: 1 1 100%;
+    padding: 0 2em;
+}
+.right-panel{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    flex-grow: 1;
+    padding: 0px 3em;
+
+}
+.panel{
+    width: 100px;
+    height: 100px;
+    font-size: 32px;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex: 0 0 33.333333%;
+}
+
+.panel1, .panel8{
+    background-color: #6F98A8;
+}
+.panel2, .panel4{
+    background-color: #2B8EAD;
+}
+.panel3, .panel5, .panel9{
+    background-color: #2F454E;
+}
+.panel6, .panel7{
+    background-color: #BFBFBF;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    background-color: #72C3DC;
+    border: 0px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 2px #2F454E;
+    width: 100%;
+}
+
+button:focus{
+    outline: none;
+    background-color: #2F454E;
+}
+
+@media screen and (max-width: 490px) {
+    .container {
+        flex-flow: column-reverse;
+        background-color: #ffffff;
+    }
+    .left-panel {
+        width: 96%;
+        padding: 0px 2%;
+        align-content: start;
+    }
+    .panel{
+        background-color: #EFEFEF;
+        height: 30px;
+        font-size: 12px;
+        width: 100%;
+        margin: 5px 0px;
+        color: #000000;
+        border: 0px;
+        border-left: 5px;
+        border-style: solid;
+        flex: 0 0 100%;
+    }
+    .right-panel{
+        flex-flow: row;
+    }
+    button{
+        width: auto;
+    }
+
+    .panel1, .panel8{
+        border-color:#6F98A8;
+    }
+    .panel2, .panel4{
+        border-color:#2B8EAD;
+    }
+    .panel3, .panel5, .panel9{
+        border-color:#2F454E;
+    }
+    .panel6, .panel7{
+        border-color:#BFBFBF;
+    }
+}
